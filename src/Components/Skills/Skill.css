@@ -1,0 +1,40 @@
+/* .skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px 100px;
+} */
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   gap: 20px;
+}
+
+.skill-title h1{
+    padding: 0px 30px;
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: center;
+    
+}
+
+.skills .card{
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.skills .skill-icon{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.skills .card:hover{
+    box-shadow:  1px 5px 10px 2px yellow;
+    transition: 1s;
+}

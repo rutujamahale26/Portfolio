@@ -1,0 +1,82 @@
+.hero .left .btn-1{
+    padding: 20px 40px;
+    background: skyblue;
+    border-radius: 50px;
+}
+.hero{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero .left{
+    /* background-color: yellow; */
+    width: 500px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow:  5px 5px 10px 2px yellow;
+    line-height: 50px;
+}
+
+.hero .left a{
+    text-decoration: none;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.hero .right .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:  aqua; */
+    /* height: 350px;
+    width: 350px */
+}
+.hero .right .img img{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    animation-name: superman;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes superman{
+    0%{
+        border-color: blue;
+        transform: translate(0, 0px);
+        box-shadow: 10px 10px 100px 50px blue;
+    }
+    25%{
+        border-color: rgb(239, 244, 11);
+        box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+     }
+    50%{
+        border-color: rgb(12, 12, 199);
+        transform: translate(0, 10px);
+        box-shadow: 10px 10px 100px 50px (12, 12, 199);
+    }
+    75%{
+        border-color: rgb(130, 217, 160);
+        box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+    }
+    100%{
+        border-color: rgb(50, 55, 205);
+        transform: translate(0, -0px);
+        box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+    }
+}
+
+@media(max-width:78px){
+    .hero{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: center;
+        flex-direction: column;
+    }
+}
